@@ -1,4 +1,4 @@
-using stingUtilitiesAPI;
+using StringUtilitiesAPI;
 
 var app = WebApplication.Create(args);
 

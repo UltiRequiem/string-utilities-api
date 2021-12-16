@@ -5,16 +5,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["string-utilities-api.csproj", "./"]
-RUN dotnet restore "string-utilities-api.csproj"
+COPY ["StringUtilitiesAPI.csproj", "./"]
+RUN dotnet restore "StringUtilitiesAPI.csproj"
 COPY . .
 WORKDIR "/src/"
-RUN dotnet build "string-utilities-api.csproj" -c Release -o /app/build
+RUN dotnet build "StringUtilitiesAPI.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "string-utilities-api.csproj" -c Release -o /app/publish
+RUN dotnet publish "StringUtilitiesAPI.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "string-utilities-api.dll"]
+ENTRYPOINT ["dotnet", "StringUtilitiesAPI"]

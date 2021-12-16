@@ -1,4 +1,4 @@
-namespace stingUtilitiesAPI;
+namespace StringUtilitiesAPI;
 
 internal static class RouteHandlers
 {

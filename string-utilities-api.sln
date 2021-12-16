@@ -1,5 +1,5 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "string-utilities-api", "string-utilities-api.csproj", "{8C63DCAF-4FB0-450B-BE6B-9CFDAD9C2B0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringUtilitiesAPI", "StringUtilitiesAPI.csproj", "{8C63DCAF-4FB0-450B-BE6B-9CFDAD9C2B0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
